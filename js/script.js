@@ -108,12 +108,21 @@ document.addEventListener('DOMContentLoaded', function () {
         if (document.body.classList.contains('dark-mode')) {
             toggleModeButton.src = './js/images/sun.jpeg';
             logo.src = 'images/kim_labo_logo_dark.png';
+            localStorage.setItem('theme', 'dark'); // ダークモードをローカルストレージに保存
         } else {
             toggleModeButton.src = './js/images/moon.jpg';
             logo.src = 'images/kim_labo_logo.png';
+            localStorage.setItem('theme', 'light'); // ライトモードをローカルストレージに保存
         }
     });
 
     // 初期モード設定
-    document.body.classList.add('light-mode');
+    const savedTheme = localStorage.getItem('theme'); // ローカルストレージからテーマを取得
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        logo.src = 'images/kim_labo_logo_dark.png';
+    } else {
+        document.body.classList.add('light-mode');
+        logo.src = 'images/kim_labo_logo.png';
+    }
 });
