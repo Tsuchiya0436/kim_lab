@@ -106,11 +106,11 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.classList.toggle('dark-mode');
         document.body.classList.toggle('light-mode');
         if (document.body.classList.contains('dark-mode')) {
-            toggleModeButton.src = './js/images/sun.jpeg';
+            toggleModeButton.src = 'images/sun.jpeg';
             logo.src = 'images/kim_labo_logo_dark.png';
             localStorage.setItem('theme', 'dark'); // ダークモードをローカルストレージに保存
         } else {
-            toggleModeButton.src = './js/images/moon.jpg';
+            toggleModeButton.src = 'images/moon.jpg';
             logo.src = 'images/kim_labo_logo.png';
             localStorage.setItem('theme', 'light'); // ライトモードをローカルストレージに保存
         }
@@ -120,9 +120,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const savedTheme = localStorage.getItem('theme'); // ローカルストレージからテーマを取得
     if (savedTheme === 'dark') {
         document.body.classList.add('dark-mode');
+		toggleModeButton.src = 'images/sun.jpeg';
         logo.src = 'images/kim_labo_logo_dark.png';
     } else {
         document.body.classList.add('light-mode');
+		toggleModeButton.src = 'images/moon.jpg';
         logo.src = 'images/kim_labo_logo.png';
     }
 });
