@@ -97,6 +97,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // 初回のスライド表示を開始
     showSlides(1);
 
+    // ロゴの参照を取得
+    const logo = document.querySelector('.header-logo img');
+
     // ダークモードとライトモードの切り替え
     const toggleModeButton = document.getElementById('toggleMode');
     toggleModeButton.addEventListener('click', function () {
@@ -104,8 +107,10 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.classList.toggle('light-mode');
         if (document.body.classList.contains('dark-mode')) {
             toggleModeButton.src = './js/images/sun.jpeg';
+            logo.src = 'images/kim_labo_logo_dark.png';
         } else {
             toggleModeButton.src = './js/images/moon.jpg';
+            logo.src = 'images/kim_labo_logo.png';
         }
     });
 
