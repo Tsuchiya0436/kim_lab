@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <!-- header start -->
@@ -31,24 +32,27 @@
 
     <!-- main start -->
     <main class="main">
-        <div class="slideshow-container">
-            <div class="slides-wrapper">
-                <div class="mySlides">
-                    <img src="images/entrance.jpg" alt="Entrance">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/building.jpg" alt="" />
                 </div>
-                <div class="mySlides">
-                    <img src="images/building.jpg" alt="Building">
+                <div class="swiper-slide">
+                    <img src="./images/atrium.jpg" alt="" />
                 </div>
-                <div class="mySlides">
-                    <img src="images/atrium.jpg" alt="Atrium">
+                <div class="swiper-slide">
+                    <img src="./images/building.jpg" alt="" />
                 </div>
-                <div class="mySlides">
-                    <img src="images/class.jpg" alt="Atrium">
+                <div class="swiper-slide">
+                    <img src="./images/atrium.jpg" alt="" />
                 </div>
-                <!-- さらにスライドを追加できます -->
+                <!-- 必要に応じてスライドを追加 -->
             </div>
-            <a class="prev">&#10094;</a>
-            <a class="next">&#10095;</a>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </main>
     <!-- main end -->
@@ -59,6 +63,7 @@
     </footer>
     <!-- footer end -->
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
