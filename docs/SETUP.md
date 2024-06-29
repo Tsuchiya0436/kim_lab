@@ -30,7 +30,7 @@
 		npm -v
 		```
 	5. 正しくインストールされている場合、Node.jsとnpmのそれぞれのバージョンが表示されます</br>
-	<img src="./image/nodeInstallImg.png">
+		<img src="./image/nodeInstallImg.png">
 
 ## STEP3 : GitHubのアカウント登録
 - 既にGitHubのアカウントをお持ちの方はこの手順は不要です。
@@ -49,19 +49,19 @@
 		```shell
 		git -v
 		```
-3. 正しくインストールされている場合、Gitのバージョンが表示されます。
-<img src="./image/gitInstallImg.png">
-
-4. インストールしたGitにユーザー名とメールアドレスを設定します。
-	- 指定はないですが、先ほどGitHubに登録したメールアドレスとユーザー名をそのまま登録することをお勧めします。
-	- ターミナル（Windowsの場合、コマンドプロンプトや、PowerShell）を開き、以下のコマンドを実行して設定します。
-	```shell
-	git config --global user.name "ユーザー名を入力"
-	```
-	```shell
-	git config --global user.email "メールアドレスを入力"
-	```
-	- ユーザー名やメールアドレスなどを入力せずに実行すると現在登録されている設定を見ることができます。正しく設定されているか確認してみましょう。
+	3. 正しくインストールされている場合、Gitのバージョンが表示されます。
+		<img src="./image/gitInstallImg.png">
+	
+	4. インストールしたGitにユーザー名とメールアドレスを設定します。
+		- 指定はないですが、先ほどGitHubに登録したメールアドレスとユーザー名をそのまま登録することをお勧めします。
+		- ターミナル（Windowsの場合、コマンドプロンプトや、PowerShell）を開き、以下のコマンドを実行して設定します。
+		```shell
+		git config --global user.name "ユーザー名を入力"
+		```
+		```shell
+		git config --global user.email "メールアドレスを入力"
+		```
+		- ユーザー名やメールアドレスなどを入力せずに実行すると現在登録されている設定を見ることができます。正しく設定されているか確認してみましょう。
 
 ## STEP5 : GitHubにSSHキーを設定する
 - 既にGitHubにご自身の公開鍵が登録されている場合、この手順は不要です。
@@ -251,17 +251,17 @@
 
 - mainへ反映させるためにはプルリクエストなるものを作成し、他者にコードをレビューしてもらわなければなりません
 
-1. GitHubからPullRequestを作成します
-
-	- `Compare & pull request`を選択
-
-	<img src="./image/pullrequImg.png">
-
-	- テンプレートに沿って記入
-
-	<img src="./image/createPullRequstImg.png">
-
-2. 作成したプルリクエストを誰かにレビューしてもらいましょう！！
+	1. GitHubからPullRequestを作成します
+	
+		- `Compare & pull request`を選択
+	
+		<img src="./image/pullrequImg.png">
+	
+		- テンプレートに沿って記入
+	
+		<img src="./image/createPullRequstImg.png">
+	
+	2. 作成したプルリクエストを誰かにレビューしてもらいましょう！！
 
 ## 最後に
 - このドキュメントは随時編集していただいて大丈夫です。
