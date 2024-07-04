@@ -3,6 +3,9 @@
     "tailwindcss": "^3.4.4"
   },
   "dependencies": {
-    "@tailwindcss/aspect-ratio": "^0.4.2"
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "natural": "^7.0.7"
   }
 }
