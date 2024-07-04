@@ -10,9 +10,9 @@
 		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 	</head>
 	<body class="font-sans text-black bg-white dark:bg-zinc-900 dark:text-white">
-		<nav class="bg-gray-800 fixed top-0 left-0 w-full z-50">
+		<nav class="bg-gray-800 fixed top-0 left-0 w-full z-50 h-16 sm:h-24">
 			<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-				<div class="relative flex h-24 items-center justify-between">
+				<div class="relative flex h-16 sm:h-24 items-center justify-between">
 					<div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
 						<!-- Mobile menu button-->
 						<button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
@@ -28,7 +28,7 @@
 						</button>
 					</div>
 					<div class="flex items-center justify-center flex-1 sm:justify-start">
-						<img src="./images/kim_labo_logo_dark.png" alt="Logo" class="w-40 h-auto">
+						<img src="./images/kim_labo_logo_dark.png" alt="Logo" class="w-24 h-auto sm:w-32 lg:w-40">
 					</div>
 					<div class="hidden sm:flex sm:space-x-4">
 						<a href="index.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Home</a>
@@ -38,11 +38,11 @@
 						<a href="contact.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
 					</div>
 					<div class="flex items-center sm:ml-40">
-						<button id="toggleMode" class="mode-icon w-8 h-auto">
-							<svg id="moonIcon" class="h-8 w-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<button id="toggleMode" class="mode-icon w-6 h-auto sm:w-8">
+							<svg id="moonIcon" class="h-6 w-6 sm:h-8 sm:w-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 								<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
 							</svg>
-							<svg id="sunIcon" class="h-8 w-8 text-white hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<svg id="sunIcon" class="h-6 w-6 sm:h-8 sm:w-8 text-white hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 								<circle cx="12" cy="12" r="5" />
 								<line x1="12" y1="1" x2="12" y2="3" />
 								<line x1="12" y1="21" x2="12" y2="23" />
@@ -58,25 +58,25 @@
 				</div>
 			</div>
 			<!-- Mobile menu, show/hide based on menu state. -->
-			<div class="hidden sm:hidden" id="mobile-menu">
+			<div class="hidden sm:hidden bg-white dark:bg-gray-900 absolute top-16 left-0 max-w-1/2 max-h-1/2 overflow-y-auto" id="mobile-menu">
 				<div class="space-y-1 px-2 pb-3 pt-2">
-					<a href="index.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Home</a>
-					<a href="about.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
-					<a href="research.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Research</a>
-					<a href="news.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">News</a>
-					<a href="contact.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
+					<a href="index.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-800 dark:text-gray-300 hover:bg-gray-700 hover:text-white">Home</a>
+					<a href="about.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-800 dark:text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
+					<a href="research.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-800 dark:text-gray-300 hover:bg-gray-700 hover:text-white">Research</a>
+					<a href="news.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-800 dark:text-gray-300 hover:bg-gray-700 hover:text-white">News</a>
+					<a href="contact.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-800 dark:text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
 				</div>
 			</div>
 		</nav>
 		<!-- main start -->
-		<main class="main p-40">
+		<main class="main p-10 sm:p-20 md:p-40 mt-16 sm:mt-24">
 			<section class="text-center mb-16">
 				<h1 class="text-4xl font-bold text-gray-800 dark:text-white mb-4">金ゼミの紹介</h1>
 				<p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
 					松蔭大学の金ゼミでは、個人認証、暗号、情報セキュリティおよび情報教育支援ソフトに関する最新の研究を通じて学生の成長を支援しています。以下は、私たちの研究内容とゼミの紹介です。
 				</p>
 			</section>
-			<section class="grid grid-cols-1 md:grid-cols-2 gap-10">
+			<section class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-10">
 				<div class="bg-gray-100 dark:bg-zinc-800 p-6 rounded-lg shadow-md">
 					<h2 class="text-2xl font-semibold text-gray-800 dark:text-white mb-4">研究内容1: モバイルシステム</h2>
 					<p class="text-gray-600 dark:text-gray-300">
@@ -121,13 +121,18 @@
 				</div>
 			</section>
 			<section class="mt-16">
-				<h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-6">ゼミ紹介</h2>
-				<p class="text-lg text-gray-600 dark:text-gray-300 mb-4">
-					金ゼミでは、情報セキュリティ(個人認証、暗号、サイバー攻撃)、情報処理、画像処理などに関連した処理方式の検討、ソフトやコンテンツなどの作成、および評価などを実行し、卒論としてまとめることを基本とします。学生が独自に提案するテーマも、学生と教員が相談の上、卒研として実行できます。
-				</p>
-				<p class="text-lg text-gray-600 dark:text-gray-300">
-					各自の個性を伸ばすことを重視し、1名ごとの卒研テーマを実行します。
-				</p>
+				<div class="bg-gray-100 dark:bg-zinc-800 p-6 rounded-lg shadow-md flex flex-col h-auto">
+					<h2 class="text-3xl font-bold text-gray-800 dark:text-white mb-6">ゼミ紹介</h2>
+					<p class="text-lg text-gray-600 dark:text-gray-300 mb-4">
+						金ゼミでは、情報セキュリティ(個人認証、暗号、サイバー攻撃)、情報処理、画像処理などに関連した処理方式の検討、ソフトやコンテンツなどの作成、および評価などを実行し、卒論としてまとめることを基本とします。
+					</p>
+					<div class="hidden-content hidden">
+						<p class="text-gray-600 dark:text-gray-300">
+							金ゼミでは、情報セキュリティ(個人認証、暗号、サイバー攻撃)学生が独自に提案するテーマも、学生と教員が相談の上、卒研として実行できます。各自の個性を伸ばすことを重視し、1名ごとの卒研テーマを実行します。
+						</p>
+					</div>
+					<button class="read-more text-blue-500 hover:text-blue-700 mt-4">続きを読む</button>
+				</div>
 			</section>			
 		</main>
 		<!-- main end -->
@@ -140,5 +145,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script src="./js/script.js"></script>
 	<script src="./js/nav.js"></script>
+	<script src="./js/readmore.js"></script>
 	</body>
 </html>
