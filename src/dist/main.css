@@ -640,6 +640,10 @@ video {
   margin-top: 1rem !important;
 }
 
+.mt-2 {
+  margin-top: 0.5rem !important;
+}
+
 .block {
   display: block !important;
 }
@@ -704,12 +708,24 @@ video {
   max-width: 1000px !important;
 }
 
+.max-w-full {
+  max-width: 100% !important;
+}
+
 .flex-1 {
   flex: 1 1 0% !important;
 }
 
 .cursor-pointer {
   cursor: pointer !important;
+}
+
+.list-inside {
+  list-style-position: inside !important;
+}
+
+.list-disc {
+  list-style-type: disc !important;
 }
 
 .grid-cols-1 {
@@ -1052,6 +1068,14 @@ video {
 @media (min-width: 1024px) {
   .lg\:w-40 {
     width: 10rem !important;
+  }
+
+  .lg\:w-1\/2 {
+    width: 50% !important;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row !important;
   }
 
   .lg\:px-8 {
