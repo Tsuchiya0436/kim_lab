@@ -30,13 +30,13 @@
 					<div class="flex items-center justify-center flex-1 sm:justify-start">
 						<img src="./images/kim_labo_logo_dark.png" alt="Logo" class="w-24 h-auto sm:w-32 lg:w-40">
 					</div>
-					<div class="hidden sm:flex sm:space-x-4 ">
-						<a href="index.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-800 dark:text-gray-300 hover:bg-gray-700 hover:text-white">Home</a>
-						<a href="about.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-800 dark:text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
-						<a href="research.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-800 dark:text-gray-300 hover:bg-gray-700 hover:text-white">Research</a>
-						<a href="itsupportdesk.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-800 dark:text-gray-300 hover:bg-gray-700 hover:text-white">ITSupportDesk</a>
-						<a href="contact.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-800 dark:text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
-						<a href="info.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-800 dark:text-gray-300 hover:bg-gray-700 hover:text-white">Infomations</a>
+					<div class="hidden sm:flex sm:space-x-4">
+						<a href="index.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Home</a>
+						<a href="about.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
+						<a href="research.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Research</a>
+						<a href="itsupportdesk.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">ITSupportDesk</a>
+						<a href="contact.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
+						<a href="info.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Infomations</a>
 					</div>
 					<div class="flex items-center sm:ml-40">
 						<button id="toggleMode" class="mode-icon w-6 h-auto sm:w-8">
@@ -67,33 +67,33 @@
 					<a href="itsupportdesk.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-800 dark:text-gray-300 hover:bg-gray-700 hover:text-white">ITSupportDesk</a>
 					<a href="contact.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-800 dark:text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
 					<a href="info.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-800 dark:text-gray-300 hover:bg-gray-700 hover:text-white">Infomations</a>
+				</div>
 			</div>
 		</nav>
 		<!-- main start -->
-		<main class="main mt-12 p-10 sm:p-20 md:p-40">
-			<div class="swiper w-full max-w-[1000px] mx-auto relative">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<img src="./images/nameplate.JPG" alt="" class="swiper-image w-full h-full object-contain"/>
-					</div>
-					<div class="swiper-slide flex items-center justify-center">
-						<img src="./images/lecture.JPG" alt="" class="swiper-image w-full h-full object-contain"/>
-					</div>
-					<div class="swiper-slide">
-						<img src="./images/seminar.JPG" alt="" class="swiper-image w-full h-full object-contain"/>
-					</div>
-					<div class="swiper-slide">
-						<img src="./images/support_desk.JPG" alt="" class="swiper-image w-full h-full object-contain"/>
-					</div>
-					<div class="swiper-slide">
-						<img src="./images/thesis.JPG" alt="" class="swiper-image w-full h-full object-contain"/>
-					</div>
+		<main class="main p-10 sm:p-20 md:p-40">
+			<div class="news-container grid grid-cols-1 sm:grid-cols-2 gap-6">
+				<div class="news-item bg-gray-100 dark:bg-zinc-800 p-6 rounded-lg shadow-lg mb-6">
+					<h2 class="news-title text-2xl font-semibold mb-2">2024年度 授業時間割</h2>
+					<p class="news-date text-gray-600 dark:text-gray-300 mb-4">2024/04/09</p>
+					<p class="news-content text-gray-600 dark:text-gray-300">2024年度　文系学部の授業時間割です。</p>
+					<a href="pdf/shoin-timetable2024.pdf" class="pdf-link text-blue-500 hover:text-blue-700 ml-4" target="_blank">PDFを読む</a>
 				</div>
-				<div class="swiper-pagination"></div>
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
+				<!-- 追加のニュース項目 -->
+				<div class="news-item bg-gray-100 dark:bg-zinc-800 p-6 rounded-lg shadow-lg mb-6">
+					<h2 class="news-title text-2xl font-semibold mb-2">ニュースタイトル</h2>
+					<p class="news-date text-gray-600 dark:text-gray-300 mb-4">日付</p>
+					<p class="news-content text-gray-600 dark:text-gray-300">ニュース内容の要約がここに入ります。詳細な説明や報告などが含まれます。</p>
+				</div>
+				<!-- 追加のニュース項目 -->
+				<div class="news-item bg-gray-100 dark:bg-zinc-800 p-6 rounded-lg shadow-lg mb-6">
+					<h2 class="news-title text-2xl font-semibold mb-2">ニュースタイトル</h2>
+					<p class="news-date text-gray-600 dark:text-gray-300 mb-4">日付</p>
+					<p class="news-content text-gray-600 dark:text-gray-300">ニュース内容の要約がここに入ります。詳細な説明や報告などが含まれます。</p>
+				</div>
 			</div>
 		</main>
+		
 		<!-- main end -->
 
 		<!-- footer start -->
