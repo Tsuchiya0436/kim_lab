@@ -145,18 +145,16 @@
 
 			<img src="./image/vscodeFileOpenImg.png">
 
-	5. TailWindCSSの設定を行います。
-		- 当プロジェクトにはCSSを記述しやすくするフレームワーク「TailwindCSS」が入っています。
-
-		- TailWindCSSを動作させるために、特定のコマンドを実行する必要があります。
-
+	5. 依存関係のinstall
 		- 下記コマンドをVSCode上のターミナルで実行し、初期設定を終えてください。
 			```shell
-			npm install -D tailwindcss
+			npm install
 			```
 
 	6. HTMLファイルの変更を監視する
-		- TailwindCSSはCSSを記述しなくて良い代わりに、HTMLからCSSファイルを生成します。そのため、HTMLファイルに変更があった場合はCSSファイルを生成し直さなければなりません。
+		- 当プロジェクトにはCSSを記述しやすくするフレームワーク「TailwindCSS」が入っています。
+
+  		- TailwindCSSはCSSを記述しなくて良い代わりに、HTMLからCSSファイルを生成します。そのため、HTMLファイルに変更があった場合はCSSファイルを生成し直さなければなりません。 
 
 		- しかし毎度毎度変更のたびにCSSファイルを手動で生成するのは大変なので、HTMLファイルの変更を監視し、変更があった場合はCSSファイルを更新してくれるウオッチモードを動作させます
 
